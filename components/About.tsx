@@ -1,0 +1,48 @@
+import React from "react";
+import AnimatedElement from "./AnimatedElement";
+
+const About: React.FC = () => (
+  <section id="about" className="py-24">
+    <div className="container mx-auto px-6">
+      <AnimatedElement>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          About <span className="text-accent">Me</span>
+        </h2>
+      </AnimatedElement>
+      <div className="grid md:grid-cols-5 gap-12 items-center">
+        <AnimatedElement className="md:col-span-2">
+          <div className="relative w-full max-w-sm mx-auto aspect-square rounded-full overflow-hidden p-2 bg-gradient-to-br from-blue-600 to-teal-500">
+            <img
+              src="https://picsum.photos/seed/avatar/400/400"
+              alt="Developer Portrait"
+              className="rounded-full w-full h-full object-cover"
+            />
+          </div>
+        </AnimatedElement>
+        <div className="md:col-span-3">
+          <AnimatedElement delay={0.2}>
+            <p className="text-secondary text-lg mb-4">
+              Hello! I'm a frontend developer based in [Your City], with a deep
+              passion for web technologies and a knack for turning complex
+              problems into beautiful, intuitive interfaces. My journey into web
+              development started years ago, and since then, I've been hooked on
+              the endless possibilities of creating for the web.
+            </p>
+          </AnimatedElement>
+          <AnimatedElement delay={0.4}>
+            <p className="text-secondary text-lg mb-6">
+              I thrive on building things from the ground up and enjoy the
+              process of bringing ideas to life in the browser. I am a strong
+              advocate for clean code, great user experience, and high
+              performance. When I'm not coding, I enjoy exploring new
+              technologies, contributing to open source, or grabbing a cup of
+              coffee.
+            </p>
+          </AnimatedElement>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+export default About;
