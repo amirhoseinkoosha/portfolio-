@@ -6,7 +6,7 @@ import * as random from "maath/random";
 const Stars = (props: any) => {
   const ref = useRef<any>();
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
+    random.inSphere(new Float32Array(6000), { radius: 1.2 })
   );
 
   useFrame((state, delta) => {
@@ -14,8 +14,8 @@ const Stars = (props: any) => {
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
 
-    const targetX = state.mouse.x * 0.1;
-    const targetY = state.mouse.y * 0.1;
+    const targetX = state.pointer.x * 0.1;
+    const targetY = state.pointer.y * 0.1;
 
     if (state.camera) {
       state.camera.position.x += (targetX - state.camera.position.x) * 0.02;

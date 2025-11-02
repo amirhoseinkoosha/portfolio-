@@ -18,7 +18,7 @@ const Header: React.FC = () => {
     { href: "#projects", label: "Projects" },
     { href: "#contact", label: "Contact" },
   ];
-
+  const name = "AmirHoseinkoosha".split("");
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -30,7 +30,17 @@ const Header: React.FC = () => {
           href="#"
           className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400"
         >
-          YourName
+          {name.map((letter, index) => (
+            <motion.span
+              key={index}
+              className={`inline-block bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent`}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              {letter}
+            </motion.span>
+          ))}
         </a>
 
         <div className="hidden md:flex items-center space-x-8">

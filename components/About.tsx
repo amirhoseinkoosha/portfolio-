@@ -22,11 +22,20 @@ const About: React.FC = () => (
         <div className="md:col-span-3">
           <AnimatedElement delay={0.2}>
             <p className="text-secondary text-lg mb-4">
-              Hello! I'm a frontend developer based in [Your City], with a deep
-              passion for web technologies and a knack for turning complex
-              problems into beautiful, intuitive interfaces. My journey into web
-              development started years ago, and since then, I've been hooked on
-              the endless possibilities of creating for the web.
+              Hello! I'm Amirhosein Koosha — a frontend developer based in Iran,
+              passionate about crafting clean, dynamic, and user-friendly
+              digital experiences. My journey into web development began with
+              HTML, CSS, and JavaScript, and soon evolved into working with
+              modern frameworks like React, Next.js, and React Native. I enjoy
+              building things from scratch and turning ideas into functional,
+              elegant interfaces — whether it’s a web app or a mobile
+              experience. Currently, I’m part of a development team creating an
+              interactive library app for children, where I focus on delivering
+              smooth performance and intuitive UI/UX. I value clean,
+              maintainable code, thoughtful design, and continuous learning.
+              When I’m not coding, you’ll probably find me exploring new
+              technologies, improving my side projects, or enjoying a cup of
+              coffee while listening to music
             </p>
           </AnimatedElement>
           <AnimatedElement delay={0.4}>

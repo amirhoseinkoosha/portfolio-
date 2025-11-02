@@ -4,7 +4,7 @@ import { ArrowDown } from "lucide-react";
 import StarsCanvas from "./StarsCanvas";
 
 const Hero: React.FC = () => {
-  const text1 = "Building Digital Experiences".split(" ");
+  const text1 = "Building digital experiences .".split(" ");
   const text2 = "that are Beautiful and Functional.".split(" ");
 
   return (
