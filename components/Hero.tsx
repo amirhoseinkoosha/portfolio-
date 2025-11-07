@@ -27,6 +27,13 @@ const Hero: React.FC = () => {
             },
           }}
         >
+          <iframe
+            src="https://my.spline.design/genkubgreetingrobot-rdbg0AoI5ebpPP1AJGAVgFd7/"
+            frameborder="0"
+            width="300px"
+            height="300px"
+            className="mx-auto"
+          ></iframe>
           {text1.map((word, index) => (
             <motion.span
               key={index}
