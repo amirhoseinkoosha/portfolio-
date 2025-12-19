@@ -1,6 +1,7 @@
 import React from "react";
 import AnimatedElement from "./AnimatedElement";
 import { Mail, Github, Linkedin } from "lucide-react";
+import "../style/global.css";
 
 const Contact: React.FC = () => (
   <section id="contact" className="py-24 bg-card/50">
@@ -15,34 +16,34 @@ const Contact: React.FC = () => (
         </p>
       </AnimatedElement>
       <AnimatedElement delay={0.2}>
-        <div className="flex justify-center items-center space-x-6">
-          <a
-            href="mailto:your.email@example.com"
-            className="text-secondary hover:text-accent transition-transform duration-300 hover:scale-110"
-          >
-            <Mail size={32} />
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-secondary hover:text-accent transition-transform duration-300 hover:scale-110"
-          >
-            <Github size={32} />
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-secondary hover:text-accent transition-transform duration-300 hover:scale-110"
-          >
-            <Linkedin size={32} />
-          </a>
-        </div>
+        <ul className="contact-icons">
+          <li>
+            <a href="mailto:amirhoseinkoosha@gmail.com">
+              <Mail size={32} className="icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/amirhoseinkoosha"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github size={32} className="icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/amirhoseinkoosha/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin size={32} className="icon" />
+            </a>
+          </li>
+        </ul>
       </AnimatedElement>
     </div>
   </section>
 );
 
 export default Contact;
-

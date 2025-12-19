@@ -13,9 +13,9 @@ const About: React.FC = () => (
         <AnimatedElement className="md:col-span-2">
           <div className="relative w-full max-w-sm mx-auto aspect-square rounded-full overflow-hidden p-2 bg-gradient-to-br from-blue-600 to-teal-500">
             <img
-              src="https://picsum.photos/seed/avatar/400/400"
+              src="src/assets/profile.png"
               alt="Developer Portrait"
-              className="rounded-full w-full h-full object-cover"
+              className="rounded-full w-full h-full object-cover object-top"
             />
           </div>
         </AnimatedElement>
@@ -55,4 +55,3 @@ const About: React.FC = () => (
 );
 
 export default About;
-

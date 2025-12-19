@@ -2,6 +2,7 @@ import React, { Suspense, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random";
+import Planets from "./Planets";
 
 const Stars = (props: any) => {
   const ref = useRef<any>();
@@ -50,9 +51,10 @@ export default function StarsCanvas() {
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />
+
+          {/* <Planets /> */}
         </Suspense>
       </Canvas>
     </div>
   );
 }
-

@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import StarsCanvas from "./StarsCanvas";
+import "../style/curstombutton.css";
 
 const Hero: React.FC = () => {
   const text1 = "Building digital experiences .".split(" ");
@@ -30,10 +31,11 @@ const Hero: React.FC = () => {
           <iframe
             src="https://my.spline.design/genkubgreetingrobot-rdbg0AoI5ebpPP1AJGAVgFd7/"
             frameborder="0"
-            width="300px"
-            height="300px"
+            width="400px"
+            height="400px"
             className="mx-auto"
           ></iframe>
+
           {text1.map((word, index) => (
             <motion.span
               key={index}
@@ -76,12 +78,14 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.8 }}
         >
-          <a
-            href="#projects"
-            className="bg-accent hover:bg-accent-hover text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 inline-block"
+          <button
+            className="big-button"
+            onClick={() => {
+              window.location.href = "#projects";
+            }}
           >
             View My Work
-          </a>
+          </button>
         </motion.div>
       </div>
 
@@ -105,4 +109,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-

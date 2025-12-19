@@ -5,41 +5,39 @@ import type { Project } from "../types";
 
 const projects: Project[] = [
   {
-    title: "E-commerce Platform",
-    description:
-      "A full-featured e-commerce site with product listings, a shopping cart, and a secure checkout process, built with a modern tech stack.",
-    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
+    title: "Gonbad Kabud Application",
+    description: "Literacy platform",
+    tags: ["React native", "TypeScript"],
     imageUrl: "https://picsum.photos/seed/project1/600/400",
     liveUrl: "#",
     sourceUrl: "#",
   },
   {
-    title: "Data Visualization Dashboard",
-    description:
-      "An interactive dashboard for visualizing complex datasets, featuring various chart types and real-time data updates.",
-    tags: ["React", "D3.js", "TypeScript", "Styled-Components"],
+    title: "Meerkat Application",
+    description: "adaptive learning",
+    tags: ["React native", "TypeScript"],
     imageUrl: "https://picsum.photos/seed/project2/600/400",
     liveUrl: "#",
     sourceUrl: "#",
   },
-  {
-    title: "Project Management Tool",
-    description:
-      "A collaborative tool for teams to manage tasks, track progress, and communicate effectively, inspired by Trello and Asana.",
-    tags: ["React", "Firebase", "Framer Motion", "TypeScript"],
-    imageUrl: "https://picsum.photos/seed/project3/600/400",
-    liveUrl: "#",
-    sourceUrl: "#",
-  },
-  {
-    title: "Personal Blog",
-    description:
-      "A content-focused personal blog with a clean design, markdown support, and static site generation for optimal performance.",
-    tags: ["Next.js", "Markdown", "Tailwind CSS", "Vercel"],
-    imageUrl: "https://picsum.photos/seed/project4/600/400",
-    liveUrl: "#",
-    sourceUrl: "#",
-  },
+  // {
+  //   title: "Project Management Tool",
+  //   description:
+  //     "A collaborative tool for teams to manage tasks, track progress, and communicate effectively, inspired by Trello and Asana.",
+  //   tags: ["React", "Firebase", "Framer Motion", "TypeScript"],
+  //   imageUrl: "https://picsum.photos/seed/project3/600/400",
+  //   liveUrl: "#",
+  //   sourceUrl: "#",
+  // },
+  // {
+  //   title: "Personal Blog",
+  //   description:
+  //     "A content-focused personal blog with a clean design, markdown support, and static site generation for optimal performance.",
+  //   tags: ["Next.js", "Markdown", "Tailwind CSS", "Vercel"],
+  //   imageUrl: "https://picsum.photos/seed/project4/600/400",
+  //   liveUrl: "#",
+  //   sourceUrl: "#",
+  // },
 ];
 
 const Projects: React.FC = () => (
@@ -71,7 +69,7 @@ const Projects: React.FC = () => (
                       <Eye size={24} />
                     </a>
                   )}
-                  {project.sourceUrl && (
+                  {/* {project.sourceUrl && (
                     <a
                       href={project.sourceUrl}
                       target="_blank"
@@ -80,13 +78,13 @@ const Projects: React.FC = () => (
                     >
                       <Code size={24} />
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                 <p className="text-secondary mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
+                {/* <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
@@ -95,7 +93,7 @@ const Projects: React.FC = () => (
                       {tag}
                     </span>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </AnimatedElement>
@@ -106,4 +104,3 @@ const Projects: React.FC = () => (
 );
 
 export default Projects;
-
