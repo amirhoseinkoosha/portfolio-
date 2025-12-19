@@ -28,12 +28,12 @@ const About: React.FC = () => (
               HTML, CSS, and JavaScript, and soon evolved into working with
               modern frameworks like React, Next.js, and React Native. I enjoy
               building things from scratch and turning ideas into functional,
-              elegant interfaces — whether it’s a web app or a mobile
-              experience. Currently, I’m part of a development team creating an
+              elegant interfaces — whether it's a web app or a mobile
+              experience. Currently, I'm part of a development team creating an
               interactive library app for children, where I focus on delivering
               smooth performance and intuitive UI/UX. I value clean,
               maintainable code, thoughtful design, and continuous learning.
-              When I’m not coding, you’ll probably find me exploring new
+              When I'm not coding, you'll probably find me exploring new
               technologies, improving my side projects, or enjoying a cup of
               coffee while listening to music
             </p>
@@ -55,3 +55,4 @@ const About: React.FC = () => (
 );
 
 export default About;
+
