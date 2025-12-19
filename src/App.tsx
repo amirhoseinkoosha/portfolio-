@@ -6,10 +6,12 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import CursorFollow from "./components/cursorFollow";
 
 export default function App() {
   return (
     <div className="bg-background">
+      <CursorFollow />
       <Header />
       <main>
         <Hero />
